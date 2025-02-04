@@ -1,6 +1,10 @@
+<!-- @import </public/css/app.css> -->
 <html lang="en-gb">
 <%- include('_head') -%>
 <%- include('_header') -%>
+<head>
+    <link rel="stylesheet" href=".public/css/app.css">
+</head>
 <body>
 <h1>Posts</h1>
 <div>
@@ -10,7 +14,7 @@
     <% postList.results.forEach(function(post) {%>
     <div>
         <li>
-            <p><%= post.message %> - <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %> </p>                   
+            <p class=""><%= post.message %> - <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %> </p>                   
             <img src = "<%= post.imageUrl %>" />             
             <p>Posted By: <%= post.postedBy.name %> - <%= post.postedBy.email %></p>            
             <p>Liked By: <%= post.likedBy.length %></p>                     
