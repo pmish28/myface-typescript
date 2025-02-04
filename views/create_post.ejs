@@ -3,6 +3,18 @@
 <%- include('_header') -%>
 <body>
 <h1>Create Post</h1>
+<form method="post" action="/posts/create">
+    <label for = "messageInput">Message:</label>
+
+    <input type="text" name="message" id ="messageInput"/>
+
+    <label for ="imageUrlInput">ImageURL: </label>
+
+    <input type="text" name="imageUrl" id="imageUrlInput">
+
+    <button type="submit">Submit</button>
+</form>
+
 </body>
 <%- include('_footer') -%>
 </html>
