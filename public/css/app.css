@@ -1,34 +1,71 @@
 /* Add your styles here. */
-body {background-color: rgb(166, 166, 239);}
+body {
+    background-color: #252A38;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold ;
+    color: #DCDCDC;
+    
+}
+
+
 
 @media only screen and (max-width: 320px) {
-    body {
-      background-color: rgb(27, 135, 52);
+
+    .img {
+        display: grid;
+        grid-area: header;
+        align-content: center;
+        
+        width: 100%;       
+    
+    }
+    .postedBy{
+        display: grid;
+        grid-area: main;
+    }
+      
+    .postMessage {
+        display: grid;
+        grid-area: footer;
+    }
+    
+      
+    
+      
 
     h1 {
-        font-size: 30px;
+       
         text-align: centre;
-        position: sticky;
-        background-color: rgb(215, 162, 47);
+        position: static;
+        background-color: rgb(73, 69, 64);
+        line-height: 60px;
+        font-size:40px
     }
 
     p {
-        font-size: 12px;
+        
+        line-height: 20px;
+        font-size: 14px;
         text-align: centre;
         position: static;
         width: 300px
     }
 
-    img {
-        width: 120px;
-        height: auto;
-        padding: 10px;
-        border: 10px;
-        margin: 10px;
-    }
+   
 
-    div {
-        margin: 40px;
+    .postDiv{
+        
+        grid-template-columns: 10px 200px 20px 200px;
+        grid-template-rows: 3;
+        grid-template-areas: 
+          "header"
+          "main main"
+          "footer";
+        background-color: #151820;        
+        gap: 15px 10px;
+        
+        
+
     }
 
     .link-button{
@@ -42,5 +79,5 @@ body {background-color: rgb(166, 166, 239);}
         border-bottom: 1px solid #333333;
         border-left: 1px solid #CCCCCC;
     }
-  }
+  
 } 
