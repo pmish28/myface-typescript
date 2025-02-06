@@ -8,18 +8,19 @@
 <body>
 <h1>Posts</h1>
 <div>
-    <a class="link-Button" href ="/posts/create">Create post</a>
+    <a class="button" href ="/posts/create">Create post</a>
 </div>
-    <button id="changeColourButton" >Colour Change</button>
+<div>
+    <button id="changeColourButton" class="button" >Colour Change</button>
+</div>
 <ol>
     <% postList.results.forEach(function(post) {%>
     <div>
-        <li class="postList" id="postListId">
+        <li class="postList"  >
             <p class="postMessage"><%= post.message %> - <%= format(post.createdAt, "yyyy-MM-dd HH:mm:ss") %> </p>                   
             <img class ="img" src = "<%= post.imageUrl %>" />             
             <p class="postedBy">Posted By: <%= post.postedBy.name %> - <%= post.postedBy.email %></p>            
-            <p class="likes">Liked By: <%= post.likedBy.length %></p>                     
-            <p class="likes">Disliked By: <%= post.dislikedBy.length %></p> 
+            <p class="likes">Liked By: <%= post.likedBy.length %> Disliked By: <%= post.dislikedBy.length %></p> 
         </li>
     </div>       
     <% }); %>
