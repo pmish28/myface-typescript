@@ -1,28 +1,12 @@
 /* Add your styles here. */
-body {
-    background-color: #252A38;
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: bold ;
-    color: #DCDCDC;
-    
-}
+    body {
+        background-color: #252A38;
+        font-family: 'Segoe UI', sans-serif;
+        font-weight: bold ;
+        color: #DCDCDC;
+        
+    }
 
-.button {
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: bold ;
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 768px ) and (min-width: 321px) {
     .button {
         font-family: 'Segoe UI', sans-serif;
         font-weight: bold ;
@@ -38,56 +22,110 @@ body {
         cursor: pointer;
     }
 
-    .img {
-    display: grid;
-    grid-area: header;
-    align-content: center;
+@media only screen and (max-width: 768px ) and (min-width: 321px) {
+    .button {
+        font-family: 'Segoe UI', sans-serif;
+        font-weight: bold ;
+        background-color: #050505;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 30;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
 
-    width: 100%;       
+    .img {
+        display: grid;
+        grid-area: header;
+        align-content: center;
+        width: 100%;  
 
     }
     .postedBy{
-    display: grid;
-    grid-area: main;
+        display: grid;
+        grid-area: main;
+        font-weight: lighter;
+        font-size: 25px;
+
     }
 
     .postMessage {
-    display: grid;
-    grid-area: footer;
+        display: grid;
+        grid-area: footer;
     }
 
 
     h1 {
 
-    text-align: centre;
-    position: static;
-    line-height: 60px;
-    font-size:40px
+        text-align: centre;
+        position: static;
+        line-height: 60px;
+        font-size:40px
     }
 
     p {
 
-    line-height: 40px;
-    font-size: 30px;
-    text-align: centre;
-    position: static;
-    width: 100%;
-    margin: 50px;
+        line-height: 40px;
+        font-size: 30px;
+        text-align: left;
+        position: static;
+        width: 100%;
+        margin: 32px;
     }   
 
     .postList{
 
-    grid-template-columns: 10px 200px 20px 200px;
-    grid-template-rows: 3;
-    grid-template-areas: 
-    "header"
-    "main main"
-    "footer";
-    background-color: #151820;        
-    gap: 15px 10px;
-    list-style-type: none;    
-
+        grid-template-columns: 10px 200px 20px 200px;
+        grid-template-rows: 3;
+        grid-template-areas: 
+        "header"
+        "main main"
+        "footer";
+        background-color: #151820;        
+        gap: 15px 10px;
+        list-style-type: none;    
+        margin-left: -37px;
     }
+
+    .postDate{
+        line-height: 5px;
+        font-size: 25px;
+        font-weight: lighter;
+        text-align: left;
+        position: static;
+        width: 100%;
+        margin: 35px;
+    }
+    .link{
+        
+        font-size: 30px;
+        color: white; 
+        text-align: center;  
+        margin: 10px;  
+    }
+
+    .link:visited{
+        color: rgb(92, 122, 122);
+        text-decoration: underline;
+        text-align: center;  
+        margin: 10px;
+    }
+
+    .nav{
+        
+        font-size: 30px;
+        color: white;   
+    }
+
+    .nav:visited{
+        color: rgb(92, 122, 122);
+        text-decoration: underline;
+    }
+    
 }
 
 
@@ -95,14 +133,14 @@ body {
     .button {
         font-family: 'Segoe UI', sans-serif;
         font-weight: bold ;
-        background-color: #04AA6D;
+        background-color: #050505;;
         border: none;
         color: white;
         padding: 7px 15px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
+        font-size: 14px;
         margin: 4px 2px;
         cursor: pointer;
     }
@@ -118,6 +156,10 @@ body {
     .postedBy{
         display: grid;
         grid-area: main;
+        font-weight: lighter;
+        font-size: 12px;
+
+        
     }
       
     .postMessage {
@@ -130,17 +172,18 @@ body {
         text-align: centre;
         position: static;
         line-height: 60px;
-        font-size:40px
+        font-size:25px
     }
 
     p {
         
         line-height: 20px;
         font-size: 14px;
-        text-align: centre;
+        text-align: left;
         position: static;
         width: 100%;
-        margin: 25px
+        margin: 15px
+        
     }   
 
     .postList{
@@ -153,7 +196,43 @@ body {
           "footer";
         background-color: #151820;        
         gap: 15px 10px;
-        list-style-type: none;     
+        list-style-type: none;  
+        margin-left:-37px   
     }
+    .postDate{
+        line-height: 5px;
+        font-size: 12px;
+        font-weight: lighter;
+        text-align: left;
+        position: static;
+        width: 100%;
+        margin: 16px;
+    }
+    .link{
+        
+        font-size: 14px;
+        color: white; 
+        text-align: center;  
+        margin: 10px;
+    }
+
+    .link:visited{
+        color: rgb(92, 122, 122);
+        text-decoration: underline;
+        text-align: center;  
+        margin: 10px;
+    }
+
+    .nav{
+        
+        font-size: 14px;
+        color: white;   
+    }
+
+    .nav:visited{
+        color: rgb(92, 122, 122);
+        text-decoration: underline;
+    }
+    
 
 } 
